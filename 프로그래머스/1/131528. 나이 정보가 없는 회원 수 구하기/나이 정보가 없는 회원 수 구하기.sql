@@ -1,0 +1,2 @@
+SELECT SUM(CASE WHEN age IS NULL THEN 1 END) USERS
+from user_info
