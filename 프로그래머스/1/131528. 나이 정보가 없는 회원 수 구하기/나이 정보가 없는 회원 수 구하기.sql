@@ -1,2 +1,3 @@
-SELECT SUM(CASE WHEN age IS NULL THEN 1 END) USERS
+SELECT count(*) USERS
 from user_info
+where age is null
