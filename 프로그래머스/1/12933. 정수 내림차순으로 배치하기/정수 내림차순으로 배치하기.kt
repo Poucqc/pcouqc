@@ -1,9 +1,5 @@
 class Solution {
     fun solution(n: Long): Long {
-        return n.toString()
-                .map{it.toString().toInt()}
-                .sortedDescending()
-                .joinToString("")
-                .toLong()
+        return n.toString().toCharArray().sorted().reversed().joinToString("").toLong()
     }
 }
