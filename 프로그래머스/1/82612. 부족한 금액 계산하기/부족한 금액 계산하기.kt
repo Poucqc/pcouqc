@@ -4,10 +4,6 @@ class Solution {
         for (i in 1 .. count) {
             amount += i * price
             }
-        if (amount > money) {
-            return amount - money
-        } else {
-            return 0
-        }
+        return if (amount > money) amount - money else 0
     }
 }
